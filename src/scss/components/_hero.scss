@@ -1,0 +1,67 @@
+.hero {
+  margin-top: 0;
+
+  background:
+    url('../img/hero/hero_bird.webp')no-repeat right 13% top 20%,
+    url('../img/hero/hero_horse_smole.webp')no-repeat left 43% bottom 20%,
+    url('../img/hero/hero_house.webp')no-repeat left 20% bottom 20%,
+    url('../img/hero/hero_cust_right.webp')no-repeat right bottom 12%,
+    url('../img/hero/hero_trees.webp')no-repeat left bottom 30%,
+    url('../img/hero/hero_cust_left.webp')no-repeat left bottom 12%,
+    url('../img/hero/hero_sky.webp')no-repeat left top 90%,
+    url('../img/hero/hero_horse_big.webp')no-repeat right 15% bottom 22%,
+    url('../img/hero/hero__bg.webp')no-repeat;
+
+  background-size: 15%, 15%, 25%, 10%, 25%, 10%, 100%, 30%, 100% 100%;
+
+
+  &__content {
+    padding-top: 88px;
+    width: 700px;
+    height: 948px;
+
+
+    @media (max-width: (992px)) {
+      height: 611px;
+    }
+
+    @media (max-width: (768px)) {
+      height: 539px;
+    }
+  }
+
+  &__title {
+    margin-top: 88px;
+
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 107%;
+  }
+
+  &__subtitle {
+    margin: 40px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #646464;
+  }
+
+  &__subtitle>span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #646464;
+  }
+
+  &__subtitle::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: -40px;
+    top: 18px;
+    background-image: url('../img/hero_line.svg');
+    width: 26px;
+    height: 3px;
+  }
+}

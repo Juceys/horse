@@ -1,0 +1,130 @@
+.direction {
+  margin-top: 100px;
+  height: 1700px;
+
+  position: relative;
+  z-index: 5;
+
+  background: url('../img/direction/direction_lawn.webp') left bottom/100% no-repeat;
+
+  @media (max-width: (992px)) {
+    // height: 1200px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 38%;
+    background:
+      url('../img/direction/direction_sky.webp') left bottom/100% no-repeat,
+      url('../img/direction/direction_woman.webp') left 10% bottom 4%/18% no-repeat;
+
+    z-index: 4;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 38%;
+    background: url('../img/direction/direction_boy.webp') right bottom 4%/23% no-repeat;
+
+    z-index: 3;
+  }
+
+  &__wrap {
+    width: 100%;
+    margin-top: 130px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    column-gap: 30px;
+  }
+
+  &__item {
+    opacity: 0;
+    transform: translateX(100px) scale(0);
+
+    transition: all 0.8s ease-in-out;
+
+    box-shadow: 31px 26px 29px -24px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: 31px 26px 29px -24px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 31px 26px 29px -24px rgba(0, 0, 0, 0.34);
+  }
+
+  &__item:nth-child(2),
+  &__item:nth-child(4),
+  &__item:nth-child(6) {
+    height: 470px;
+  }
+
+  &__item:nth-child(5) {
+    margin-top: 65px;
+  }
+
+  &__btn {
+    margin-top: 50px;
+    margin-left: 38%;
+  }
+}
+
+.card {
+  position: relative;
+  padding: 0 45px 45px 45px;
+
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+
+  &__image{
+    left: 25px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -25px;
+    width: 85%;
+  }
+
+  &__caption {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+
+    color: #363434;
+  }
+
+  &__line {
+    margin: 25px 0;
+    width: 26px;
+    height: 1px;
+
+    background-color: #008139;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #7E7E7E;
+  }
+}
+.active {
+  opacity: 1;
+  transform: translateX(0px) scale(1);
+}
+

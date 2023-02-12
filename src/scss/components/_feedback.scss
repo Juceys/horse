@@ -1,0 +1,143 @@
+section {
+  overflow: hidden;
+}
+
+.feedback {
+  margin-top: 100px;
+  position: relative;
+  height: 850px;
+  background:
+    url('../img/feedback_girl.webp')no-repeat,
+    url('../img/feedback_sky.png')no-repeat,
+    url('../img/feedback_bg.webp') no-repeat;
+  background-position: bottom left, center top, top left;
+  background-size: auto, auto, cover;
+
+  &::before {
+    position: absolute;
+    content: url('../img/feedback_sky.png');
+    width: 100%;
+    height: 200px;
+    transform: rotate(180deg);
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 60px;
+    width: 470px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: url('../img/feedback_cust.webp');
+      right: -35%;
+      bottom: -33%;
+    }
+  }
+
+  &__title {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  &__descr {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #7E7E7E;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 330px;
+    margin-bottom: 30px;
+  }
+
+
+  .swiper-pagination-bullet {
+    position: relative;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #ffca0b;
+
+  }
+
+  .hero__btn3 {
+    z-index: 150;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    bottom: -5px;
+    justify-content: center;
+    display: flex;
+    gap: 150px;
+  }
+
+
+}
+
+
+
+.input {
+  border: 1px solid #8F8F8F;
+  border-radius: 4px;
+  padding: 0 20px;
+  width: 330px;
+  height: 50px;
+  font-family: inherit;
+  color: #8d2a2a;
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: #8F8F8F;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (max-width: (1000px)) {
+  .feedback {
+    background: url('../img/feedback_girl.webp')no-repeat,
+      url('../img/feedback_sky.png')no-repeat,
+      url('../img/feedback_bg.webp') no-repeat;
+    background-position: -250px bottom, center top, left top;
+    background-size: auto, auto, cover;
+  }
+}

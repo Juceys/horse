@@ -1,0 +1,44 @@
+.footer {
+  height: 170px;
+  padding-top: 24px;
+  background-color: #0B0B0B;
+
+  &__container,
+  .footer__nav--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav {
+    &__link {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  &__btn {
+    margin-left: 30px;
+    color: white;
+    background-color: inherit;
+    padding: 14px 41px;
+    border: 2px solid #FDE724;
+    border-radius: 10px;
+
+  }
+
+  .politic {
+    margin-top: 25px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    display: inline-block;
+
+    a {
+      color: #7D808A;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+  }
+}
