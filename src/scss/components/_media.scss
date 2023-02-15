@@ -64,9 +64,78 @@
     border-radius: 20px;
   }
 
+
+  .feedback {
+    height: 1100px;
+
+    &__container {
+      padding-top: 50px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__wrapper {
+      height: 470px;
+
+      justify-content: space-between;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .reviews__card {
+    padding: 20px 15px 25px;
+  }
+
+  .reviews .swiper-wrapper {
+    margin-left: 0;
+  }
+
+  .reviews .swiper-slide-active,
+  .reviews .swiper-slide-duplicate-prev {
+    margin-top: 60px;
+    opacity: 1;
+  }
+
+  .gmap {
+
+    .contact {
+      width: 320px;
+      height: 400px;
+
+      &__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    &__img--left,
+    &__img--right {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: (768px)) {
+
+  section {
+    margin-top: 40px;
+  }
+
+  .section__title {
+    font-size: 30px;
+  }
 
   .hero {
     &__content {
@@ -111,7 +180,7 @@
     font-size: 10px;
   }
 
-  .nav {
+  .header__nav {
     display: none;
   }
 
@@ -125,9 +194,15 @@
     display: none;
   }
 
+
+  .features__subtitle {
+    font-size: 20px;
+  }
+
   .features {
     &__content {
-      padding-bottom: 50px;
+      padding-bottom: 40px;
+      margin-top: 10px;
     }
 
     &__item {
@@ -180,20 +255,50 @@
   .horses .horses_card {
     height: 80%;
   }
+
   .horses .horses_img {
     height: 80%;
+    width: 80%;
   }
 
+  .horses__swiper {
+    height: 620px;
+  }
+
+
+  .footer {
+  height: 400px;;
+
+    &__container,
+    .footer__nav--wrapper,
+    .lower {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+    }
+
+  }
 }
 
 @media (max-width: (480px)) {
 
+  section {
+    margin-top: 30px;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+
+  .features__subtitle {
+    font-size: 15px;
+  }
+
   .header .telephone__wrapper {
     display: none;
   }
-
-
-
 
   .hero {
     .container {
@@ -202,8 +307,33 @@
 
     &__content {
       margin: auto;
-      height: 539px;
+      height: 460px;
       width: 95%
+    }
+  }
+
+  .about {
+
+    &__content {
+      margin-top: 15px;
+    }
+
+    .benefits {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+
+      &__item {
+        padding-bottom: 15px;
+        border-bottom: thick double #008139;
+        border-left: thick double #008139;
+        border-top: thick double #008139;
+      }
+    }
+
+    &__text {
+      line-height: 18px;
     }
   }
 
@@ -246,4 +376,85 @@
       height: 70%;
     }
   }
+
+  .horses__swiper {
+    height: 550px;
+  }
+
+  .horses .horses_img {
+    height: 80%;
+    width: 70%;
+  }
+
+
+  .feedback {
+    height: 1150px;
+    background:
+      url('../img/feedback_girl.webp')no-repeat left -150px bottom 20% / 250%,
+      url('../img/feedback_sky.png')no-repeat center top 15%,
+      url('../img/feedback_bg.webp') no-repeat center center;
+
+    &::before {
+      height: 30px;
+      bottom: 10%;
+    }
+
+    &__container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__wrapper {
+      margin-top: 150px;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+
+      justify-content: space-between;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .input {
+    width: 280px;
+  }
+
+  .custom__checkbox {
+    &--content {
+      font-size: 14px;
+    }
+  }
+
+  .reviews {
+    margin-top: -100px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gmap {
+    height: 1000px;
+
+    .contact {
+      top: 60%;
+      left: 10px;
+      width: 250px;
+      height: 300px;
+      padding: 20px 20px;
+
+      &__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+    }
+
+  }
+
 }

@@ -3,7 +3,9 @@
   "version": "2.1.0",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
+  "homepage": "https://github.com/Juceys/horse",
   "scripts": {
+    "deploy": "gh-pages -d app",
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
     "build": "gulp build",
@@ -12,7 +14,6 @@
     "zip": "gulp zip",
     "code": "editorconfig-checker"
   },
-  "author": "MaxGraph",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -21,6 +22,7 @@
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "editorconfig-checker": "^4.0.1",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cheerio": "^1.0.0",
