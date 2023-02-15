@@ -575,8 +575,6 @@ let swiperTest3 = new Swiper("#swiper3", {
 
 // BURGER
 
-// ждём когда всё загрузиться
-
 document.getElementById("burger").addEventListener('click', () => {
   document.querySelector('.header').classList.toggle('open');
 });
@@ -608,13 +606,6 @@ targets.forEach(target => {
 });
 
 // preloader
-// document.addEventListener("DOMContentLoaded", () => {
-
-//   console.log('ready')
-//   document.querySelector('.preloader').style.display = "none";
-
-// });
-document.body.classList.toggle('_lock');
 window.onload = function () {
   setTimeout(function () {
     document.querySelector('.preloader').style.display = "none";

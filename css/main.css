@@ -6,10 +6,6 @@
   --light-color: #fff;
 }
 
-._lock {
-  overflow: auto;
-}
-
 html {
   scroll-behavior: smooth;
 }
