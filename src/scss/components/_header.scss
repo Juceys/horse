@@ -27,6 +27,7 @@
       font-size: 18px;
       line-height: 21px;
       color: #008139;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -46,6 +47,8 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
+    transition: all 0.5s ease-in-out;
+
     color: #7D808A;
   }
 }
@@ -133,11 +136,13 @@
 }
 
 .header.open .telephone__wrapper {
+
   transform: translateX(390px);
 
   .telephone__link {
     color: white;
   }
+
   .time__work {
 
     color: #ffffff;

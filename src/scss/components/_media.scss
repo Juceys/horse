@@ -284,6 +284,16 @@
   .footer__btn {
     margin-left: 0px;
   }
+
+  .header .telephone__wrapper {
+    position: absolute;
+    left: -400px;
+    top: 300px;
+    padding: 0px 50px 30px;
+
+    z-index: 101;
+    transition: all .5s ease-in-out;
+  }
 }
 
 @media (max-width: (480px)) {
@@ -300,15 +310,7 @@
     font-size: 15px;
   }
 
-  .header .telephone__wrapper {
-    position: absolute;
-    left: -400px;
-    top: 230px;
-    padding: 75px 50px 30px;
 
-    z-index: 101;
-    transition: all .5s ease-in-out;
-  }
 
   .hero {
     .container {

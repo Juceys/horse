@@ -67,11 +67,16 @@ let swiperTest3 = new Swiper("#swiper3", {
 // BURGER
 
 // ждём когда всё загрузиться
-const Burger = document.getElementById("burger");
-Burger.addEventListener('click', () => {
+
+document.getElementById("burger").addEventListener('click', () => {
   document.querySelector('.header').classList.toggle('open')
 })
 
+document.querySelectorAll('.nav__link').forEach((el) => {
+  el.addEventListener('click', () => {
+    document.querySelector('.header').classList.remove('open');
+  })
+})
 
 // Intersection Observer API
 
