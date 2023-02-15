@@ -248,6 +248,7 @@ const htmlInclude = () => {
     .pipe(browserSync.stream());
 }
 
+
 const watchFiles = () => {
   browserSync.init({
     server: {

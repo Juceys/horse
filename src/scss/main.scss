@@ -8,6 +8,8 @@ p{
 }
 
 // подключения компонентов страницы
+@import "./components/preloader";
+
 @import "./components/btn__singup";
 
 @import "./components/header";
@@ -17,7 +19,6 @@ p{
 @import "./components/about";
 @import "./components/features";
 @import "./components/direction";
-@import "./components/visitors";
 @import "./components/horses";
 @import "./components/feedback";
 @import "./components/reviews";
