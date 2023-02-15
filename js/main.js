@@ -596,7 +596,6 @@ var options = {
 let callback = function (entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // console.log('find', entry);
       entry.target.classList.add('active');
       observer.unobserve(entry.target);
     }
@@ -607,6 +606,21 @@ let targets = document.querySelectorAll('.anim');
 targets.forEach(target => {
   observer.observe(target);
 });
+
+// preloader
+// document.addEventListener("DOMContentLoaded", () => {
+
+//   console.log('ready')
+//   document.querySelector('.preloader').style.display = "none";
+
+// });
+document.body.classList.toggle('_lock');
+window.onload = function () {
+  setTimeout(function () {
+    document.querySelector('.preloader').style.display = "none";
+    document.body.style.overflow = "auto";
+  }, 400);
+};
 })();
 
 /******/ })()

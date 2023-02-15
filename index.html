@@ -19,9 +19,17 @@
   <script defer src="js/main.js"></script>
 </head>
 
-<body class="page__body">
+<body class="page__body _lock" style=" overflow: hidden">
   <div class="wrapper">
-    <header class="header">
+
+<header class="header">
+  <div class="preloader">
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
   <div class="header__container container">
     <button class="borger__btn btn-reset" id="burger">
       <span></span><span></span><span></span>
@@ -31,15 +39,14 @@
       <img loading="lazy" src="img/logo.svg" class="image" width="150" height="50" alt="logo">
     </a>
     <div class="header__nav">
-
-  <nav class="nav">
-    <ul class="list-reset nav__list">
-      <li class="nav__item"><a href="#about" class="nav__link">О НАС</a></li>
-      <li class="nav__item"><a href="#direction" class="nav__link">УСЛУГИ И ЦЕНЫ</a></li>
-      <li class="nav__item"><a href="#horses" class="nav__link">фотоальбом</a></li>
-      <li class="nav__item"><a href="#contact" class="nav__link">контакты</a></li>
-    </ul>
-  </nav>
+      <nav class="nav">
+  <ul class="list-reset nav__list">
+    <li class="nav__item"><a href="#about" class="nav__link">О НАС</a></li>
+    <li class="nav__item"><a href="#direction" class="nav__link">УСЛУГИ И ЦЕНЫ</a></li>
+    <li class="nav__item"><a href="#horses" class="nav__link">фотоальбом</a></li>
+    <li class="nav__item"><a href="#contact" class="nav__link">контакты</a></li>
+  </ul>
+</nav>
 
     </div>
     <div class="telephone__wrapper">
@@ -63,7 +70,7 @@
         Уроки верховой езды, фотосессии и мероприятия
         в частном конном клубе <span> г. Санкт-Петербург </span></p>
       <button class="hero__btn btn-reset btn__singup">
-       <p class="btn__text"> записаться</p>
+        <p class="btn__text"> записаться</p>
       </button>
     </div>
   </div>
@@ -71,52 +78,55 @@
 
       <section class="about" id="about">
   <div class="about__container container">
-<h2 class="about__title section__title">
-  О нашем клубе
-</h2>
+    <h2 class="about__title section__title">
+      О нашем клубе
+    </h2>
 
-<div class="about__content">
-  <div class="about__left">
-    <picture>
-      <source srcset="img/about/about_horse.webp" type="image/webp">
-      <img loading="lazy" src="img/about/about_horse.png" class="about_horse" width="800" height="500" alt="about_horse">
-    </picture>
-  </div>
-  <div class="about__right">
-    <div class="benefits">
-      <div class="benefits__item anim">
-        <div class="benefits__digital">1100+</div>
-        <div class="benefits__descr">
-          Довольный посетителей за последний год
+    <div class="about__content">
+      <div class="about__left">
+        <picture>
+          <source srcset="img/about/about_horse.webp" type="image/webp">
+          <img loading="lazy" src="img/about/about_horse.png" class="about_horse" width="800" height="500"
+            alt="about_horse">
+        </picture>
+      </div>
+      <div class="about__right">
+        <div class="benefits">
+          <div class="benefits__item anim">
+            <div class="benefits__digital">1100+</div>
+            <div class="benefits__descr">
+              Довольный посетителей за последний год
+            </div>
+          </div>
+          <div class="benefits__item anim">
+            <div class="benefits__digital">50+</div>
+            <div class="benefits__descr">
+              Проведенных мероприятий за 6 месяцев
+            </div>
+          </div>
+          <div class="benefits__item anim">
+            <div class="benefits__digital">20+</div>
+            <div class="benefits__descr">
+              Выпущенных профессиональных спортсменов за 1 год
+            </div>
+          </div>
+          <div class="benefits__item anim">
+            <div class="benefits__digital">15+</div>
+            <div class="benefits__descr">Регулярный занятий
+              в неделю с профессиональными наставниками
+            </div>
+          </div>
         </div>
       </div>
-      <div class="benefits__item anim">
-        <div class="benefits__digital">50+</div>
-        <div class="benefits__descr">
-          Проведенных мероприятий за 6 месяцев
-        </div>
-      </div>
-      <div class="benefits__item anim">
-        <div class="benefits__digital">20+</div>
-        <div class="benefits__descr">
-          Выпущенных профессиональных спортсменов за 1 год
-        </div>
-      </div>
-      <div class="benefits__item anim">
-        <div class="benefits__digital">15+</div>
-        <div class="benefits__descr">Регулярный занятий
-          в неделю с профессиональными наставниками
-        </div>
+      <div class="about__text">
+        Занятия проводятся индивидуально и в группах, стоимость также будет зависеть от ваших навыков и умений. Более
+        выгодные условия
+        предусмотрены для регулярных занятий при покупке абонементов.
+        Для тех, кто хочет отточить своё мастерство, разработаны программы по специализации (конкур, выездка и другие),
+        участие в соревнованиях и чемпионатах. Для самых маленьких любителей лошадей действуют
+        пони-клубы, где ребята учатся ухаживать за животными и ездить на милых и добрых пони.
       </div>
     </div>
-  </div>
-  <div class="about__text">
-    Занятия проводятся индивидуально и в группах, стоимость также будет зависеть от ваших навыков и умений. Более выгодные условия
-    предусмотрены для регулярных занятий при покупке абонементов.
-    Для тех, кто хочет отточить своё мастерство, разработаны программы по специализации (конкур, выездка и другие), участие в соревнованиях и чемпионатах. Для самых маленьких любителей лошадей действуют
-    пони-клубы, где ребята учатся ухаживать за животными и ездить на милых и добрых пони.
-  </div>
-</div>
   </div>
 </section>
 
@@ -262,71 +272,7 @@
 
 </section>
 
-      <!-- <section class="visitors">
-  <div class="visitors__container container">
-    <div class="visitors__title section__title">
-      Наши посетители
-    </div>
-  </div>
-  <div class="swiper" id="swiper1">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="figure">
-          <img loading="lazy" src="img/horse/1.jpg" class="swiper__img">
-          <img loading="lazy" src="img/horse/3.jpg" class="swiper__img">
-          <img loading="lazy" src="img/horse/5.jpg" class="swiper__img">
-          <img loading="lazy" src="img/horse/7.jpg" class="swiper__img">
-          <img loading="lazy" src="img/horse/10.jpg" class="swiper__img">
-          <img loading="lazy" src="img/horse/4.jpg"  class="swiper__img">
-          <img loading="lazy" src="img/horse/6.jpg"  class="swiper__img">
-          <img loading="lazy" src="img/horse/2.jpg"  class="swiper__img">
-          <img loading="lazy" src="img/horse/8.jpg"  class="swiper__img">
-          <img loading="lazy" src="img/horse/9.jpg"  class="swiper__img">
-          <div class="figcaption">Cлайд 1</div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="figure">
-          <img src="img/horse/8.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <div class="figcaption">Слайд 2</div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="figure">
-          <img src="img/horse/9.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <img src="img/horse/1.jpg" class="swiper__img">
-          <div class="figcaption">Cлайд 3</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero__btn">
-    <div class="hero__btn-left">
-      <svg width="102" height="24" viewBox="0 0 102 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51471C13.1924 2.92892 13.1924 1.97918 12.6066 1.39339C12.0208 0.807604 11.0711 0.807604 10.4853 1.39339L0.939339 10.9393ZM102 10.5L2 10.5L2 13.5L102 13.5L102 10.5Z"
-          fill="black" />
-      </svg>
-    </div>
-    <div class="hero__btn-right">
-      <svg width="102" height="24" viewBox="0 0 102 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M101.061 13.0607C101.646 12.4749 101.646 11.5251 101.061 10.9393L91.5147 1.3934C90.9289 0.807612 89.9792 0.807612 89.3934 1.3934C88.8076 1.97918 88.8076 2.92893 89.3934 3.51472L97.8787 12L89.3934 20.4853C88.8076 21.0711 88.8076 22.0208 89.3934 22.6066C89.9792 23.1924 90.9289 23.1924 91.5147 22.6066L101.061 13.0607ZM0 13.5H100V10.5H0V13.5Z"
-          fill="black" />
-      </svg>
-    </div>
-  </div>
-</section> -->
-
-      <section class="horses">
+      <section class="horses" id="horses">
   <div class="section__title horses__title">
     Наши лошади
   </div>
@@ -392,51 +338,55 @@
     <div class="hero__btn-left2">
       <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_649_7)">
-        <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="url(#paint0_linear_649_7)"/>
+          <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="url(#paint0_linear_649_7)" />
         </g>
-        <path d="M18.2723 20.5L24 14.6664L22.3638 13L15 20.5L22.3638 28L24 26.3336L18.2723 20.5Z" fill="#6A5300"/>
+        <path d="M18.2723 20.5L24 14.6664L22.3638 13L15 20.5L22.3638 28L24 26.3336L18.2723 20.5Z" fill="#6A5300" />
         <defs>
-        <filter id="filter0_d_649_7" x="0" y="0" width="40" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-        <feOffset dy="1"/>
-        <feComposite in2="hardAlpha" operator="out"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0.783333 0 0 0 0 0.611307 0 0 0 0 0 0 0 0 1 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_649_7"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_649_7" result="shape"/>
-        </filter>
-        <linearGradient id="paint0_linear_649_7" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#9BCFFF"/>
-        <stop offset="0.0001" stop-color="#FFF8B6"/>
-        <stop offset="1" stop-color="#FFC700"/>
-        </linearGradient>
+          <filter id="filter0_d_649_7" x="0" y="0" width="40" height="41" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="1" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.783333 0 0 0 0 0.611307 0 0 0 0 0 0 0 0 1 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_649_7" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_649_7" result="shape" />
+          </filter>
+          <linearGradient id="paint0_linear_649_7" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9BCFFF" />
+            <stop offset="0.0001" stop-color="#FFF8B6" />
+            <stop offset="1" stop-color="#FFC700" />
+          </linearGradient>
         </defs>
-        </svg>
+      </svg>
 
     </div>
     <div class="hero__btn-right2">
       <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_649_4)">
-        <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_649_4)"/>
+          <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_649_4)" />
         </g>
-        <path d="M21.7277 20.5L16 14.6664L17.6362 13L25 20.5L17.6362 28L16 26.3336L21.7277 20.5Z" fill="#6A5300"/>
+        <path d="M21.7277 20.5L16 14.6664L17.6362 13L25 20.5L17.6362 28L16 26.3336L21.7277 20.5Z" fill="#6A5300" />
         <defs>
-        <filter id="filter0_d_649_4" x="0" y="0" width="40" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-        <feOffset dy="1"/>
-        <feComposite in2="hardAlpha" operator="out"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0.783333 0 0 0 0 0.611307 0 0 0 0 0 0 0 0 1 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_649_4"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_649_4" result="shape"/>
-        </filter>
-        <linearGradient id="paint0_linear_649_4" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#9BCFFF"/>
-        <stop offset="0.0001" stop-color="#FFF8B6"/>
-        <stop offset="1" stop-color="#FFC700"/>
-        </linearGradient>
+          <filter id="filter0_d_649_4" x="0" y="0" width="40" height="41" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="1" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.783333 0 0 0 0 0.611307 0 0 0 0 0 0 0 0 1 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_649_4" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_649_4" result="shape" />
+          </filter>
+          <linearGradient id="paint0_linear_649_4" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9BCFFF" />
+            <stop offset="0.0001" stop-color="#FFF8B6" />
+            <stop offset="1" stop-color="#FFC700" />
+          </linearGradient>
         </defs>
-        </svg>
+      </svg>
 
     </div>
   </div>
@@ -773,15 +723,14 @@
     </a>
     <div class="footer__nav--wrapper">
       <div class="footer__nav">
-
-  <nav class="nav">
-    <ul class="list-reset nav__list">
-      <li class="nav__item"><a href="#about" class="nav__link">О НАС</a></li>
-      <li class="nav__item"><a href="#direction" class="nav__link">УСЛУГИ И ЦЕНЫ</a></li>
-      <li class="nav__item"><a href="#horses" class="nav__link">фотоальбом</a></li>
-      <li class="nav__item"><a href="#contact" class="nav__link">контакты</a></li>
-    </ul>
-  </nav>
+        <nav class="nav">
+  <ul class="list-reset nav__list">
+    <li class="nav__item"><a href="#about" class="nav__link">О НАС</a></li>
+    <li class="nav__item"><a href="#direction" class="nav__link">УСЛУГИ И ЦЕНЫ</a></li>
+    <li class="nav__item"><a href="#horses" class="nav__link">фотоальбом</a></li>
+    <li class="nav__item"><a href="#contact" class="nav__link">контакты</a></li>
+  </ul>
+</nav>
 
       </div>
       <button class="footer__btn btn-reset">записаться</button>
