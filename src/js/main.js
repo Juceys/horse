@@ -51,7 +51,7 @@ let swiperTest3 = new Swiper("#swiper3", {
 
   breakpoints: {
     480: {
-      slidesPerView:  1.7
+      slidesPerView: 1.7
     },
     768: {
       slidesPerView: 2.3
@@ -64,11 +64,14 @@ let swiperTest3 = new Swiper("#swiper3", {
 });
 
 
-//scroll animation
+// BURGER
 
 // ждём когда всё загрузиться
-// document.addEventListener('DOMContentLoaded', () => {
-// });
+const Burger = document.getElementById("burger");
+Burger.addEventListener('click', () => {
+  document.querySelector('.header').classList.toggle('open')
+})
+
 
 // Intersection Observer API
 

@@ -22,11 +22,11 @@
   .telephone {
     position: relative;
 
-    &__link{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #008139;
+    &__link {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #008139;
     }
   }
 
@@ -47,5 +47,99 @@
     font-size: 13px;
     line-height: 15px;
     color: #7D808A;
+  }
+}
+
+.borger__btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 39px;
+}
+
+.borger__btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  left: 5px;
+  transition: all .4s ease-in-out;
+
+}
+
+.header.open .borger__btn span:nth-child(1) {
+  transform: translateY(0) rotate(-45deg);
+  background-color: white;
+
+}
+
+.header.open .borger__btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .borger__btn span:nth-child(3) {
+  transform: translateY(0) rotate(45deg);
+  background-color: white;
+
+}
+
+.borger__btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.borger__btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+@media (max-width: (768px)) {
+
+  .borger__btn {
+    display: block;
+    z-index: 102;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: -400px;
+    top: -10px;
+
+    width: 400px;
+    height: 400px;
+    padding: 75px 50px 30px;
+    border-radius: 10px;
+
+    z-index: 101;
+
+    background-color: #008139;
+    transition: all .5s ease-in-out;
+
+    & .nav__list {
+      display: block;
+    }
+
+    & .nav__link {
+      display: block;
+      border: none;
+      padding: 20px 0;
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+}
+
+.header.open .header__nav {
+  transform: translateX(390px);
+}
+
+.header.open .telephone__wrapper {
+  transform: translateX(390px);
+
+  .telephone__link {
+    color: white;
+  }
+  .time__work {
+
+    color: #ffffff;
   }
 }

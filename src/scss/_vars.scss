@@ -8,7 +8,18 @@
   // colors
   --light-color: #fff;
 }
+html,body{
+  height: 100%;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+.main{
+  flex-grow: 1;
+}
 section{
   margin-top: 100px;
 }
