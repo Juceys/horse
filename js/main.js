@@ -573,11 +573,13 @@ let swiperTest3 = new Swiper("#swiper3", {
   }
 });
 
-//scroll animation
+// BURGER
 
 // ждём когда всё загрузиться
-// document.addEventListener('DOMContentLoaded', () => {
-// });
+const Burger = document.getElementById("burger");
+Burger.addEventListener('click', () => {
+  document.querySelector('.header').classList.toggle('open');
+});
 
 // Intersection Observer API
 

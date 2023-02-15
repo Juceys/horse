@@ -20,14 +20,19 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <div class="wrapper">
+    <header class="header">
   <div class="header__container container">
+    <button class="borger__btn btn-reset" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+
     <a href="#">
       <img loading="lazy" src="img/logo.svg" class="image" width="150" height="50" alt="logo">
     </a>
     <div class="header__nav">
 
-  <nav class="nav ">
+  <nav class="nav">
     <ul class="list-reset nav__list">
       <li class="nav__item"><a href="#" class="nav__link">О НАС</a></li>
       <li class="nav__item"><a href="#" class="nav__link">УСЛУГИ И ЦЕНЫ</a></li>
@@ -45,11 +50,12 @@
         Ежедневно 9:00 — 22:00
       </p>
     </div>
+
   </div>
 </header>
 
-  <main class="main">
-    <section class="hero">
+    <main class="main">
+      <section class="hero">
   <div class="hero__container container">
     <div class="hero__content">
       <h1 class="hero__title">Окунитесь в мир лошадей вместе с нами</h1>
@@ -63,7 +69,7 @@
   </div>
 </section>
 
-    <section class="about">
+      <section class="about">
   <div class="about__container container">
 <h2 class="about__title section__title">
   О нашем клубе
@@ -114,7 +120,7 @@
   </div>
 </section>
 
-    <section class="features">
+      <section class="features">
   <div class="features__container container">
     <h2 class="features__title section__title">
       Почему нас выбирают
@@ -124,7 +130,7 @@
     </p>
 
     <div class="features__content">
-      <div class="features__item">
+      <div class="features__item anim">
         <img loading="lazy" src="img/features_map.jpg" class="image" width="113" height="95" alt="map">
         <p class="features__tagline">
           Удобное расположение
@@ -135,7 +141,7 @@
           чтобы вам было удобно добираться
         </p>
       </div>
-      <div class="features__item">
+      <div class="features__item anim">
         <img loading="lazy" src="img/features_table.jpg" class="image" width="156" height="118" alt="map">
         <p class="features__tagline">
           Обеденная зона
@@ -144,7 +150,7 @@
           Имеется столовая, чтобы Вы могли перекусить и немного отдохнуть. Бесплатно чай, кофе, печенки.
         </p>
       </div>
-      <div class="features__item">
+      <div class="features__item anim">
         <img loading="lazy" src="img/features_watch.jpg" class="image" width="96" height="118" alt="map">
         <p class="features__tagline">
           Профессиональные тренера
@@ -153,7 +159,7 @@
           Наши преподаватели имеют награды в конном спорте, и отличные отзывы среди наших учеников
         </p>
       </div>
-      <div class="features__item">
+      <div class="features__item anim">
         <img loading="lazy" src="img/features_car.jpg" class="image" width="151" height="114" alt="map">
         <p class="features__tagline">
           Бесплатная парковка
@@ -167,7 +173,7 @@
   </div>
 </section>
 
-    <section class="direction">
+      <section class="direction">
   <div class="direction__container container">
     <div class="direction__title section__title">
       Направления клуба
@@ -256,7 +262,7 @@
 
 </section>
 
-    <!-- <section class="visitors">
+      <!-- <section class="visitors">
   <div class="visitors__container container">
     <div class="visitors__title section__title">
       Наши посетители
@@ -320,13 +326,13 @@
   </div>
 </section> -->
 
-    <section class="horses">
+      <section class="horses">
   <div class="section__title horses__title">
     Наши лошади
   </div>
 
-  <div class="swiper horses__swiper" id="swiper2">
-    <div class="swiper-wrapper">
+  <div class="swiper horses__swiper " id="swiper2">
+    <div class="swiper-wrapper ">
       <div class="card  horses_card swiper-slide">
         <img loading="lazy" src="img/our_horses_2.jpg" class="horses_img card__img" alt="horse">
         <div class="card__caption">
@@ -437,7 +443,7 @@
 
 </section>
 
-    <section class="feedback">
+      <section class="feedback">
   <div class="feedback__container container">
     <div class="feedback__wrapper">
       <h1 class="feedback__title">Отвечаем на вопросы</h1>
@@ -465,7 +471,7 @@
   </div>
 </section>
 
-    <section class="reviews">
+      <section class="reviews">
   <div class="reviews__container">
     <h1 class="reviews__title section__title">О нас говорят клиенты</h1>
 
@@ -699,7 +705,7 @@
   </div>
 </section>
 
-    <section class="gmap">
+      <section class="gmap">
   <div id="map">
     <div class="contact">
       <h2 class="contact__title">Контакты</h2>
@@ -759,8 +765,8 @@
   </picture>
 </section>
 
-  </main>
-  <footer class="footer">
+    </main>
+    <footer class="footer">
   <div class="footer__container container">
     <a href="#">
       <img loading="lazy" src="img/footer__logo.svg" class="image" width="150" height="50" alt="footer__logo">
@@ -768,7 +774,7 @@
     <div class="footer__nav--wrapper">
       <div class="footer__nav">
 
-  <nav class="nav ">
+  <nav class="nav">
     <ul class="list-reset nav__list">
       <li class="nav__item"><a href="#" class="nav__link">О НАС</a></li>
       <li class="nav__item"><a href="#" class="nav__link">УСЛУГИ И ЦЕНЫ</a></li>
@@ -787,6 +793,7 @@
   </div>
 </footer>
 
+  </div>
 </body>
 
 </html>
