@@ -55,7 +55,6 @@
 
   .card {
     padding: 0 15px 15px 15px;
-
   }
 
   .direction__image {
@@ -63,7 +62,6 @@
     width: 85%;
     border-radius: 20px;
   }
-
 
   .feedback {
     height: 1100px;
@@ -180,18 +178,14 @@
     font-size: 10px;
   }
 
-
-
   .about__content {
     display: flex;
     flex-direction: column;
-
   }
 
   .about__left {
     display: none;
   }
-
 
   .features__subtitle {
     font-size: 20px;
@@ -209,7 +203,6 @@
       padding: 15px 5px 0;
       max-width: 271px;
       height: 300px;
-
     }
   }
 
@@ -254,7 +247,7 @@
     height: 80%;
   }
 
-  .horses .horses_img {
+  .horses .horses__img {
     height: 80%;
     width: 80%;
   }
@@ -309,8 +302,6 @@
   .features__subtitle {
     font-size: 15px;
   }
-
-
 
   .hero {
     .container {
@@ -393,11 +384,11 @@
     height: 550px;
   }
 
-  .horses .horses_img {
+  .horses .horses__img {
+    left: 15%;
     height: 80%;
     width: 70%;
   }
-
 
   .feedback {
     margin-top: -120px;
@@ -465,9 +456,7 @@
         font-size: 20px;
         margin-bottom: 10px;
       }
-
     }
-
   }
 
   .footer {
@@ -475,7 +464,6 @@
 
     .footer__container {
       flex-direction: column-reverse;
-
     }
   }
 

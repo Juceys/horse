@@ -6,8 +6,6 @@
 
   background: url('../img/direction/direction_lawn.webp') left bottom/100% no-repeat;
 
-
-
   &::before {
     position: absolute;
     content: "";
@@ -86,11 +84,8 @@
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
 
-  &__image {
-    left: 25px;
-  }
-
   &__img {
+    left: 8%;
     position: absolute;
     top: -25px;
     width: 85%;

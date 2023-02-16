@@ -15,7 +15,6 @@
         "a a   b b "
         "c c   c c ";
     }
-
   }
 
   &__left {
@@ -42,7 +41,6 @@
     grid-template-rows: 1fr 1fr;
     gap: 24px;
 
-
     &__digital {
       font-weight: 700;
       font-size: 42px;
@@ -68,10 +66,8 @@
   }
 }
 
-
 .benefits__item {
   opacity: 0;
   transform: translateX(-100px) scale(0);
   transition: all 0.8s ease-in-out;
-
 }

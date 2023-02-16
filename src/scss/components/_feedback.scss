@@ -4,7 +4,6 @@ section {
 
 .feedback {
   position: relative;
-
   height: 850px;
 
   background:
@@ -24,7 +23,6 @@ section {
     left: 0;
     z-index: 10;
   }
-
 
   &__container {
     height: 100%;
@@ -46,7 +44,6 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 35px;
-
 
     &::before {
       position: absolute;
@@ -80,7 +77,6 @@ section {
     margin: 0 auto 30px;
   }
 
-
   .swiper-pagination-bullet {
     position: relative;
     bottom: 0px;
@@ -104,11 +100,7 @@ section {
     display: flex;
     gap: 150px;
   }
-
-
 }
-
-
 
 .input {
   border: 1px solid #8F8F8F;
