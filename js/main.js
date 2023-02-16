@@ -606,12 +606,14 @@ targets.forEach(target => {
 });
 
 // preloader
-window.onload = function () {
-  setTimeout(function () {
-    document.querySelector('.preloader').style.display = "none";
-    document.body.style.overflow = "auto";
-  }, 400);
-};
+// window.onload = function () {
+
+//   setTimeout(function () {
+//     document.querySelector('.preloader').style.display = "none";
+//     document.body.style.overflow = "auto";
+
+//   }, 400);
+// };
 })();
 
 /******/ })()
