@@ -102,11 +102,11 @@ targets.forEach(target => {
 
 
 // preloader
-window.onload = function () {
+// window.onload = function () {
 
-  setTimeout(function () {
-    document.querySelector('.preloader').style.display = "none";
-    document.body.style.overflow = "auto";
+//   setTimeout(function () {
+//     document.querySelector('.preloader').style.display = "none";
+//     document.body.style.overflow = "auto";
 
-  }, 400);
-};
+//   }, 400);
+// };

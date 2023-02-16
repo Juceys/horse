@@ -8,12 +8,9 @@ p{
 }
 
 // подключения компонентов страницы
-@import "./components/preloader";
-
-@import "./components/btn__singup";
-
 @import "./components/header";
 
+@import "./components/btn__singup";
 @import "./components/nav";
 @import "./components/hero";
 @import "./components/about";
