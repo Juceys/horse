@@ -1,10 +1,3 @@
-import './_vendor';
-import vars from './_vars';
-import './_functions';
-import './_components';
-
-
-
 // SWIPER HORSE
 
 let swiperTest2 = new Swiper("#swiper2", {
@@ -65,7 +58,6 @@ let swiperTest3 = new Swiper("#swiper3", {
 
 
 // BURGER
-
 document.getElementById("burger").addEventListener('click', () => {
   document.querySelector('.header').classList.toggle('open')
 })
@@ -77,7 +69,6 @@ document.querySelectorAll('.nav__link').forEach((el) => {
 })
 
 // Intersection Observer API
-
 var options = {
   root: null,
   rootMargin: '5px',
@@ -98,15 +89,3 @@ let targets = document.querySelectorAll('.anim')
 targets.forEach(target => {
   observer.observe(target);
 })
-
-
-
-// preloader
-// window.onload = function () {
-
-//   setTimeout(function () {
-//     document.querySelector('.preloader').style.display = "none";
-//     document.body.style.overflow = "auto";
-
-//   }, 400);
-// };

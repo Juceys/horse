@@ -3,15 +3,11 @@
 @import "mixins";
 @import "settings";
 
-p{
-  margin: 0;
-}
-
 // подключения компонентов страницы
-@import "./components/header";
-
 @import "./components/btn__singup";
 @import "./components/nav";
+
+@import "./components/header";
 @import "./components/hero";
 @import "./components/about";
 @import "./components/features";

@@ -10,15 +10,6 @@
   z-index: 100;
   transition: all 0.5s ease-in-out;
 
-  .btn__text {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 32px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-  }
-
   &:hover {
     .btn__text {
       color: white;
@@ -28,26 +19,39 @@
     border-radius: 15px;
     box-shadow: 1px 7px 27px 9px #C89C00;
   }
+}
 
-  @media (max-width: (992px)) {
+.btn__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
 
+@media (max-width: (992px)) {
+  .btn__singup {
     width: 220px;
     height: 60px;
   }
+}
 
-  @media (max-width: (768px)) {
-
+@media (max-width: (768px)) {
+  .btn__singup {
     width: 180px;
     height: 45px;
   }
 
-  @media (max-width: (480px)) {
+}
+
+@media (max-width: (480px)) {
+  .btn__singup {
     width: 170px;
     height: 40px;
+  }
 
-    .btn__text {
-      font-weight: 600;
-      font-size: 12px;
-    }
+  .btn__text {
+    font-size: 12px;
   }
 }

@@ -8,14 +8,14 @@ section {
 
   background:
     url('../img/feedback_girl.webp')no-repeat left -200px bottom,
-    url('../img/feedback_sky.png')no-repeat center top,
+    url('../img/feedback_sky.webp')no-repeat center top,
     url('../img/feedback_bg.webp') no-repeat center center;
 
   background-size: auto, auto, cover;
 
   &::before {
     position: absolute;
-    content: url('../img/feedback_sky.png');
+    content: url('../img/feedback_sky.webp');
     width: 100%;
     height: 200px;
     transform: rotate(180deg);
@@ -76,7 +76,9 @@ section {
     display: block;
     margin: 0 auto 30px;
   }
-
+  &-text{
+    font-weight: 500;
+  }
   .swiper-pagination-bullet {
     position: relative;
     bottom: 0px;
