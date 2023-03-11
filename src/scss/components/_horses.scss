@@ -1,6 +1,8 @@
 .horses {
   position: relative;
-
+&__title{
+  margin-bottom: 30px;
+}
   .horses_card {
     margin: 30px 0 40px;
     box-sizing: border-box;

@@ -7,11 +7,9 @@ section {
   height: 850px;
 
   background:
-    url('../img/feedback_girl.webp')no-repeat left -200px bottom,
-    url('../img/feedback_sky.webp')no-repeat center top,
-    url('../img/feedback_bg.webp') no-repeat center center;
-
-  background-size: auto, auto, cover;
+    url('../img/feedback_sky.webp')no-repeat center bottom/ auto,
+    url('../img/feedback_girl.webp')no-repeat left -200px bottom/ auto,
+    url('../img/feedback_bg.webp') no-repeat center center/ cover;
 
   &::before {
     position: absolute;
@@ -19,9 +17,8 @@ section {
     width: 100%;
     height: 200px;
     transform: rotate(180deg);
-    bottom: 0;
-    left: 0;
-    z-index: 10;
+    top: 100px;
+    right: -10%;
   }
 
   &__container {
@@ -33,7 +30,7 @@ section {
 
   &__wrapper {
     position: relative;
-    padding: 60px;
+    padding: 30px;
     width: 470px;
     height: 550px;
     background-color: #fff;
@@ -55,7 +52,6 @@ section {
 
   &__title {
     font-family: 'Philosopher';
-    font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 35px;
@@ -64,7 +60,6 @@ section {
 
   &__descr {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
@@ -74,61 +69,38 @@ section {
 
   &__btn {
     display: block;
-    margin: 0 auto 30px;
   }
-  &-text{
+
+  &-text {
     font-weight: 500;
   }
-  .swiper-pagination-bullet {
-    position: relative;
-    bottom: 0px;
-    width: 10px;
-    height: 10px;
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: #ffca0b;
-
-  }
-
-  .hero__btn3 {
-    z-index: 150;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    margin-left: -115px;
-    bottom: -5px;
-    justify-content: center;
-    display: flex;
-    gap: 150px;
-  }
 }
 
-.input {
-  border: 1px solid #8F8F8F;
-  border-radius: 4px;
-  padding: 0 20px;
-  width: 330px;
-  height: 50px;
-  font-family: inherit;
-  color: #8d2a2a;
-  background-color: transparent;
-}
-
-.input::placeholder {
-  color: #8F8F8F;
-}
-
-.input {
-  margin-bottom: 20px;
-}
-
-.form__label {
+.feedback__form {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  .input__box {
+    width: 100%;
+  }
 }
 
-.custom__checkbox {
-  display: block;
-  padding-left: 5%;
+@media (max-width: (992px)) {
+  .feedback__form {
+    gap: 20px;
+    padding: 0;
+  }
+
+  .feedback {
+    .label__checkbox::after {
+      display: none;
+    }
+
+    .input__checkbox:checked+.label__checkbox::before {
+      background: #f5cf47;
+    }
+  }
+
 }

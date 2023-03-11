@@ -1,30 +1,34 @@
 <section class="feedback">
   <div class="feedback__container container">
     <div class="feedback__wrapper">
-      <h1 class="feedback__title">Отвечаем на вопросы</h1>
+      <h3 class="feedback__title">Отвечаем на вопросы</h3>
       <p class="feedback__descr">Мы ответим на все ваши вопросы по телефону,
         или вы можете записаться на бесплатное
         пробное занятие</p>
-      <form action="#" class="form" enctype="multipart/form-data">
-        <label class="form__label">
-          <input class="input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя"
-            reqired>
-        </label>
 
-        <label class="form__label">
-          <input class="input input-tel" type="tel" data-validate-field="tel" name="Телефон"
-            placeholder="Введите телефон" reqired>
-        </label>
+      <form class="form feedback__form">
+        <div class="input__box">
+          <input id="feedback__name" type="text" class="form__input " name="Имя" required>
+          <label for="feedback__name" class="form__label">Ваше имя</label>
+        </div>
 
-        <button class="feedback__btn btn-reset btn__singup">
-          <p class="btn__text feedback-text"> Задать вопрос</p>
+        <div class="input__box">
+          <input id="feedback__phone" class="form__input " type="tel" name="Телефон" required>
+          <label for="feedback__phone" class="form__label">Ваш телефон</label>
+        </div>
+
+        <button class="feedback__btn btn-reset btn--yellow">
+          Задать вопрос
         </button>
 
-        <label class="custom__checkbox">
-          <input type="checkbox" class="custom__checkbox--field" reqired>
-          <span class="custom__checkbox--content">Даю согласие на обработку данных</span>
-        </label>
+        <div class="input__box">
+          <input id="feedback__politic" type="checkbox" class="input__checkbox" name="checkbox" required>
+          <label for="feedback__politic" class="label__checkbox label__checkbox--fill">
+            <span> Даю согласие на обработку данных</span>
+          </label>
+        </div>
       </form>
+
     </div>
   </div>
 </section>

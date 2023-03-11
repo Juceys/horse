@@ -1,4 +1,4 @@
-.btn__singup {
+.btn--yellow {
   width: 270px;
   height: 70px;
   position: relative;
@@ -7,38 +7,38 @@
   background-color: #f5cf47;
   box-shadow: 0px 4px 0px #C89C00;
 
-  z-index: 100;
+  z-index: 10;
   transition: all 0.5s ease-in-out;
 
-  &:hover {
-    .btn__text {
-      color: white;
-      transform: scale(1.2);
-    }
-
-    border-radius: 15px;
-    box-shadow: 1px 7px 27px 9px #C89C00;
-  }
-}
-
-.btn__text {
   font-weight: 600;
   font-size: 15px;
   line-height: 32px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 7px 27px 9px #C89C00;
+  }
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
 }
 
 @media (max-width: (992px)) {
-  .btn__singup {
+  .btn--yellow {
     width: 220px;
     height: 60px;
   }
 }
 
 @media (max-width: (768px)) {
-  .btn__singup {
+  .btn--yellow {
     width: 180px;
     height: 45px;
   }
@@ -46,7 +46,7 @@
 }
 
 @media (max-width: (480px)) {
-  .btn__singup {
+  .btn--yellow {
     width: 170px;
     height: 40px;
   }

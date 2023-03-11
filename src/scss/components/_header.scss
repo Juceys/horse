@@ -7,10 +7,6 @@
   z-index: 10000;
 }
 
-.dn {
-  display: none;
-}
-
 .header {
   margin-top: 10px;
   height: 60px;
@@ -43,15 +39,6 @@
       transition: all 0.5s ease-in-out;
     }
   }
-
-  // .telephone::before {
-  //   content: url('../img/phone.svg');
-  //   position: absolute;
-
-  //   left: -20px;
-  //   width: 16px;
-  //   height: 16px;
-  // }
 
   .time__work {
     padding-top: 8px;
