@@ -120,4 +120,5 @@
   opacity: 1;
   filter: blur(0px);
   transform: translate(0px, 0px) scale(1);
+  will-change: opacity, filter, transform;
 }

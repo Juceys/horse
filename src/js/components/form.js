@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
   async function formSend(e) {
     e.preventDefault();
     let error = formValidation(form);
-    if (error !== 0) {
-    alert("обязательное поле")
-    }
+    // if (error !== 0) {
+    // alert("обязательное поле")
+    // }
 
-    console.log(error)
+    // console.log(error)
   }
 
   function formValidation(form) {

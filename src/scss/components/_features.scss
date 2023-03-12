@@ -36,6 +36,8 @@
 
     filter: blur(10px);
     transition: all .4s ease-in-out;
+    will-change: filter, scale;
+
 
     &:hover {
       transform: scale(1.1);

@@ -15,6 +15,7 @@
   line-height: 32px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  will-change: box-shadow, box-shadow, color;
 
   &:hover {
     color: white;

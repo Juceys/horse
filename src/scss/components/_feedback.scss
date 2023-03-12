@@ -93,14 +93,11 @@ section {
     padding: 0;
   }
 
-  .feedback {
-    .label__checkbox::after {
-      display: none;
-    }
-
-    .input__checkbox:checked+.label__checkbox::before {
-      background: #f5cf47;
-    }
+  .label__checkbox::after {
+    display: none;
   }
 
+  .input__checkbox:checked+.label__checkbox::before {
+    background: #f5cf47;
+  }
 }
